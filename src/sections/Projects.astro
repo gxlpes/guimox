@@ -1,0 +1,26 @@
+---
+import TextH2 from '../components/text/TextH2.astro'
+import TextParagraph from '../components/text/TextParagraph.astro'
+---
+
+<section>
+  <section class="mb-4 pb-4">
+    <TextH2 bold>Personal projects</TextH2>
+    <TextParagraph>I like to spend time building things</TextParagraph>
+  </section>
+  <section class="flex max-w-2xl flex-col gap-10">
+    <div class="flex flex-col pb-4">
+      <TextH2 light>RU Menu Project</TextH2>
+      <TextParagraph>
+        A simple project made to delivery a restaurant's menu to a WhatsApp channel and provide information for
+        over 2.000 people
+      </TextParagraph>
+    </div>
+    <div class="flex flex-col pb-4">
+      <TextH2 light>Simple Duck</TextH2>
+      <TextParagraph>
+        A PoC project made to illustrate and provide a real example of using ThreeJS with Astro
+      </TextParagraph>
+    </div>
+  </section>
+</section>

@@ -1,0 +1,36 @@
+@supports (scrollbar-gutter: stable) {
+  html {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body > * {
+  color: #3d3d3d;
+  padding-inline: 3rem;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+body {
+  height: 100%;
+}
+
+main {
+  padding-block: 6rem;
+  min-height: 100%;
+}
+
+::selection {
+  background-color: #3d3d3d;
+}
