@@ -1,3 +1,9 @@
-<p class="leading-relaxed">
+---
+const { bold } = Astro.props
+
+const className = bold ? 'font-bold' : ''
+---
+
+<p class={`leading-relaxed ${className}`}>
   <slot />
 </p>
