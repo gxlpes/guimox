@@ -2,6 +2,7 @@
 const { title } = Astro.props
 import '../styles/reset.css'
 import '../styles/global.css'
+import '../styles/content.css'
 import Footer from '../components/website/footer/footer.astro'
 import Header from '../components/website/header/header.astro'
 
@@ -16,15 +17,16 @@ interface Props {
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#ff0" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0000" media="(prefers-color-scheme: dark)" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="h-full px-4 subpixel-antialiased md:px-12">
+  <body class="h-full subpixel-antialiased">
     <Header />
-    <main class="space-y-8 md:space-y-32">
+    <main class="content-grid space-y-8 md:space-y-32">
       <slot />
     </main>
     <Footer />
