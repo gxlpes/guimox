@@ -1,0 +1,42 @@
+---
+import Divider from '../../components/misc/divider.astro'
+import TextH2 from '../../components/text/text-h2.astro'
+import TextParagraph from '../../components/text/text-paragraph.astro'
+---
+
+<section class="flex w-full flex-col py-5">
+  <div class="mb-4 flex flex-col">
+    <TextH2>Projects</TextH2>
+  </div>
+  <div class="flex max-w-2xl flex-col gap-3">
+    <TextParagraph>
+      Below is a brief overview of my most recent projects, showcasing my skills in various technologies,
+      frameworks, and development practices.
+    </TextParagraph>
+    <section class="flex flex-col gap-3 py-5">
+      <div>
+        <TextParagraph bold>RU Menu Scraper</TextParagraph>
+        <TextParagraph>
+          A Java-based web scraper that retrieves the daily menu from the UFPR University Restaurant and sends it
+          to users via WhatsApp.
+        </TextParagraph>
+      </div>
+      <Divider />
+      <div>
+        <TextParagraph bold>Voyag</TextParagraph>
+        <TextParagraph>
+          A Spring Boot app that provides users with recommendations of places to visit based on the city they
+          input, integrating with external APIs to fetch popular spots.
+        </TextParagraph>
+      </div>
+      <Divider />
+      <div>
+        <TextParagraph bold>S&P 500 Symbols Scraper</TextParagraph>
+        <TextParagraph>
+          A Go-based scraper using Colly and Goquery libraries to gather the list of S&P 500 companies from
+          Wikipedia and export it in a structured format.
+        </TextParagraph>
+      </div>
+    </section>
+  </div>
+</section>

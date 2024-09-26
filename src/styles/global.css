@@ -16,7 +16,6 @@ html {
 }
 
 body > * {
-  color: #3d3d3d;
   padding-inline: 3rem;
   max-width: 1200px;
   margin-inline: auto;
@@ -24,6 +23,7 @@ body > * {
 
 body {
   height: 100%;
+  color: #3d3d3d;
 }
 
 main {
@@ -31,6 +31,28 @@ main {
   min-height: 100%;
 }
 
+/* Animation styles */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End in the original position */
+  }
+}
+
+body > * {
+  animation: fadeInUp 0.3s ease forwards;
+  opacity: 0;
+}
+
 ::selection {
   background-color: #3d3d3d;
+}
+
+html.dark body {
+  background-color: black;
+  color: white;
 }
