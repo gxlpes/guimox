@@ -3,6 +3,6 @@ const { bold, light } = Astro.props
 const fontWeightClass = bold ? 'font-bold' : light ? 'font-light' : 'font-semibold'
 ---
 
-<h2 class={`scroll-m-20 text-3xl tracking-tight transition-colors first:mt-0 ${fontWeightClass}`}>
+<h3 class={`scroll-m-20 text-2xl tracking-tight transition-colors first:mt-0 ${fontWeightClass}`}>
   <slot />
-</h2>
+</h3>
