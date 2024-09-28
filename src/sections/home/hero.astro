@@ -1,16 +1,19 @@
 ---
 import TextH1 from '../../components/text/text-h1.astro'
-import TextH2 from '../../components/text/text-h2.astro'
+import TextH3 from '../../components/text/text-h3.astro'
 import TextParagraph from '../../components/text/text-paragraph.astro'
 ---
 
-<section class="flex h-fit w-full flex-col justify-center gap-5 py-16 md:h-full md:gap-4">
+<section
+  id="hero"
+  class="full-width flex h-fit w-full flex-col justify-center gap-5 py-16 md:h-full md:gap-4 md:py-40"
+>
   <TextH1>Guilherme Lopes</TextH1>
-  <TextH2 light>Detail-driven & people focused software developer</TextH2>
+  <TextH3>Detail-driven & people-focused <b>software developer</b></TextH3>
   <div class="max-w-2xl">
     <TextParagraph>
-      Experienced software developer based in Madrid, Spain, capable of working and exploring frontend and backend.
-      Passionate about web accessibility, design systems, and creating seamless user experiences.
+      Experienced software developer capable of working and exploring frontend and backend. Passionate about web
+      accessibility, design systems, and creating seamless user experiences.
     </TextParagraph>
   </div>
 </section>
