@@ -1,6 +1,6 @@
 :root {
   --padding-inline: 1.25rem;
-  --content-max-width: 1200px;
+  --content-max-width: 1280px;
   --breakout-max-width: 1400px;
   --breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
 }
